@@ -2,6 +2,7 @@
 tfw you don't want to go through 6000+ rts to save waifu images
 
 requires:
+
   python 2.7.x (maybe it works with 3.x, idk lol)
   
 usage:
@@ -13,6 +14,7 @@ usage:
   6. execute "save.py dl" to start downloading the images
 
 notes:
+
   it will automatically append ":orig" to the end of each url before downloading for max waifures
   
   dl is throttled to 8 second sleeps after every image, you can lower it if you want i guess
