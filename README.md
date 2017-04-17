@@ -13,9 +13,11 @@ usage:
   6. execute "save.py dl" to start downloading the images
 
 notes:
+  it will automatically append ":orig" to the end of each url before downloading for max waifures
+  
   dl is throttled to 8 second sleeps after every image, you can lower it if you want i guess
   
   it will not attempt to redl files that already exist,
     so make sure to delete bad/incomplete files before restarting it again after an error
   
-  this code is fucking terrible
+  this code is fucking terrible btw
