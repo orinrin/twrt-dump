@@ -20,7 +20,7 @@ usage:
   
 for likes:
   1. edit the script and replace the username var with your actual handle (ie: "SupremeBogus")
-  2. open cmd and run "save.py lmk" to generate a .csv list of urls
+  2. open cmd and run "save.py lmk" to generate a .csv list of urls (this will take a while)
   3. afterwards, run "save.py ldl" to start downloading the images
   4. etc
 
