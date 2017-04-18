@@ -7,6 +7,10 @@ requires:
 
 python 2.7.x (maybe it works with 3.x, idk lol)
 
+optional (for dumping likes):
+
+bs4 (https://www.crummy.com/software/BeautifulSoup/)
+
 ----
 
 usage:
