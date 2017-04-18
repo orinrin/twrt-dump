@@ -17,6 +17,7 @@ usage:
   5. open cmd and run "save.py mk" to generate a .csv list of urls
   6. afterwards, run "save.py dl" to start downloading the images
   7. let it run in the background and check back once in a while to see if it errors out lol
+  
 for likes:
   1. edit the script and replace the username var with your actual handle (ie: "SupremeBogus")
   2. open cmd and run "save.py lmk" to generate a .csv list of urls
