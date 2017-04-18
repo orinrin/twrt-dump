@@ -9,7 +9,7 @@ listfile = "save.csv"
 imagedir = "save.out"
 
 username = "YourHandle"
-likefile = "likesave.csv"
+likefile = "like.csv"
 
 headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"}
 
@@ -35,6 +35,10 @@ if sys.argv[1] == "mk":
 					except: continue
 					
 					pics = tweet["entities"]["media"]
+					
+					if len(pics) < 1:
+						try: pics = tweet["retweeted_status"]["entities"]["media"]
+						except: pics = []
 					
 					for pic in pics:
 						exp = pic["expanded_url"]
@@ -76,7 +80,7 @@ elif sys.argv[1] == "dl":
 						if fail > 2: print "unable to retrieve image"; quit()
 						
 						for block in response.iter_content(1024): handle.write(block)
-	
+					break
 	else: print "no list found"
 
 elif sys.argv[1] == "lmk":
