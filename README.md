@@ -17,6 +17,11 @@ usage:
   5. open cmd and run "save.py mk" to generate a .csv list of urls
   6. afterwards, run "save.py dl" to start downloading the images
   7. let it run in the background and check back once in a while to see if it errors out lol
+for likes:
+  1. edit the script and replace the username var with your actual handle (ie: "SupremeBogus")
+  2. open cmd and run "save.py lmk" to generate a .csv list of urls
+  3. afterwards, run "save.py ldl" to start downloading the images
+  4. etc
 
 ----
 
@@ -30,3 +35,13 @@ it will not attempt to redl files that already exist,
 so make sure to delete bad/incomplete files before restarting it again after an error
   
 this code is fucking terrible btw
+
+----
+
+important:
+
+the method for retrieving likes uses twitter widget requests, which completely bypass the dev api
+
+said method is also incredibly fragile and prone to breaking in the future when they update it
+
+double check the contents of the .csv file before attempting to dl images when using the script to retrieve likes
