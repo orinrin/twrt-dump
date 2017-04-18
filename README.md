@@ -50,3 +50,5 @@ the method for retrieving likes uses twitter widget requests, which completely b
 said method is also incredibly fragile and prone to breaking in the future when they update it
 
 double check the contents of the .csv file before attempting to dl images when using the script to retrieve likes
+
+also it will only pull back around 3000 or so likes because lol twitter
