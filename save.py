@@ -80,7 +80,7 @@ elif sys.argv[1] == "dl":
 						if fail > 2: print "unable to retrieve image"; quit()
 						
 						for block in response.iter_content(1024): handle.write(block)
-					break
+	
 	else: print "no list found"
 
 elif sys.argv[1] == "lmk":
